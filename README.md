@@ -1,1 +1,7 @@
-# Onnanoco Web Front
+# Onnano.co web front
+
+## Setup
+
+```bash
+npm install
+```
