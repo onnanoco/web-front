@@ -8,5 +8,7 @@ module.exports = merge(common, {
     open: true,
   },
   devtool: 'eval-source-map',
-  plugins: [new ReactRefreshWebpackPlugin()],
+  plugins: [
+    new ReactRefreshWebpackPlugin()
+  ],
 });
