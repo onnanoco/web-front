@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# Baiduspider
+User-agent: Baiduspider
+Disallow: /
+
+# Host
+Host: https://onnano.co
+
+# Sitemaps
+Sitemap: https://onnano.co/sitemap.xml
