@@ -3,6 +3,8 @@ import  { useRouter } from 'next/router';
 
 import { Tabs } from 'antd';
 
+import { Space } from 'antd';
+import { TeamOutlined } from '@ant-design/icons';
 
 function IndexPage() {
 
@@ -19,7 +21,9 @@ function IndexPage() {
                 <TabPane
                     tab={
                         <div>
-                            <i className='fal fa-TeamOutlined'></i>
+                            <Space>
+                                <TeamOutlined />
+                            </Space>
                             <div>女の子</div>
                         </div>
                     }

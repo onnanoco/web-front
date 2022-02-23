@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Head from 'next/head';
-import { SITE_URL } from '@contants/env';
+import { SITE_URL } from '@constants/env';
 
 const SEO: React.FC = () => {
   return (
