@@ -4,7 +4,7 @@ import  { useRouter } from 'next/router';
 import { Tabs } from 'antd';
 
 import { Space } from 'antd';
-import { TeamOutlined } from '@ant-design/icons';
+import { TeamOutlined, PlusOutlined, SmileOutlined, CommentOutlined } from '@ant-design/icons';
 
 function IndexPage() {
 
@@ -28,6 +28,48 @@ function IndexPage() {
                         </div>
                     }
                     key="onnanocos"
+                >
+
+                </TabPane>
+
+                <TabPane
+                    tab={
+                        <div>
+                            <Space>
+                                <PlusOutlined />
+                            </Space>
+                            <div>女の子登録</div>
+                        </div>
+                    }
+                    key="add"
+                >
+
+                </TabPane>
+
+                <TabPane
+                    tab={
+                        <div>
+                            <Space>
+                                <CommentOutlined />
+                            </Space>
+                            <div>近況</div>
+                        </div>
+                    }
+                    key="history"
+                >
+
+                </TabPane>
+
+                <TabPane
+                    tab={
+                        <div>
+                            <Space>
+                                <SmileOutlined />
+                            </Space>
+                            <div>なにこれ</div>
+                        </div>
+                    }
+                    key="about"
                 >
 
                 </TabPane>

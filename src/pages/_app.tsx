@@ -1,5 +1,7 @@
 import 'antd/dist/antd.css';
 
+import '@assets/scss/core.scss';
+
 import * as React from 'react';
 import { Router } from 'next/router';
 import { AppProps } from 'next/app';
