@@ -1,0 +1,86 @@
+.main-tab {
+    font-size: 12px;
+    background : #fff;
+    position: relative;
+    
+    .ant-tabs-nav {
+      position: fixed;
+      bottom: 0;
+      margin-bottom: 0;
+      background: #fff;
+      width: 100%;
+      border-top: 1px solid #efefef;
+      z-index: 100;
+      max-width: 500px;
+    }
+  
+    .ant-tabs-nav-wrap {
+      width: 100%;
+  
+      .ant-tabs-nav-list {
+        width: 100%;
+        padding: 0 20px;
+  
+        .ant-tabs-ink-bar {
+          display: none;
+        }
+      }
+  
+      .ant-tabs-tab {
+        display: flex;
+        flex: 1;
+        text-align: center;
+        font-size: 10px;
+        color: #777777;
+        justify-content: center;
+        padding: 10px 0;
+        padding-bottom: calc( env(safe-area-inset-bottom) + 10px ); 
+        padding-bottom: calc( constant(safe-area-inset-bottom) + 10px );
+  
+        .anticon {
+          font-size: 16px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 5px;
+        }
+  
+        &.ant-tabs-tab-active {
+          .ant-tabs-tab-btn {
+            color: #ff4b75;
+            text-shadow: none;
+          }
+        }
+      }
+  
+      .ant-tabs-tab-btn:focus,
+      .ant-tabs-tab-remove:focus,
+      .ant-tabs-tab-btn:active,
+      .ant-tabs-tab-remove:active {
+        color: #777777;
+      }
+  
+      .ant-tabs-tab + .ant-tabs-tab {
+        margin-left: 20px;
+      }
+
+      .ant-tabs-content-holder {
+        padding-bottom: calc(constant(safe-area-inset-bottom) + 54px);
+        padding-bottom: calc(env(safe-area-inset-bottom) + 54px);
+      }
+    }
+
+    .top-bar {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      
+        .logo{
+          margin-left: auto;
+          margin-right: auto;
+        }
+    }
+}

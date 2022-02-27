@@ -1,7 +1,9 @@
 import * as React from 'react';
-import  { useRouter } from 'next/router';
-
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import { Tabs } from 'antd';
+
+import Onnanocos from '@components/onnanocos';
 
 import { Space } from 'antd';
 import { TeamOutlined, PlusOutlined, SmileOutlined, CommentOutlined } from '@ant-design/icons';
@@ -9,7 +11,13 @@ import { TeamOutlined, PlusOutlined, SmileOutlined, CommentOutlined } from '@ant
 function IndexPage() {
 
     const router = useRouter();
+    const [tabKey, setTabKey] = useState('onnanoco');
+
     const { TabPane } = Tabs;
+
+    useEffect(() => {
+        setTabKey(router.query?.tab as string);
+    }, [router]);
 
     return (
         <div>
@@ -29,7 +37,7 @@ function IndexPage() {
                     }
                     key="onnanocos"
                 >
-
+                    <Onnanocos />
                 </TabPane>
 
                 <TabPane

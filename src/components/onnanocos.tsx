@@ -7,12 +7,14 @@
  
  import { Logo } from './common/Logo';
  
+ /*
  interface OnnanocosProps {
    onnanocos: any;
  }
- 
- const Onnanocos = (props: OnnanocosProps) => {
-   const { onnanocos } = props;
+ */
+
+ const Onnanocos = () => {
+   //const { onnanocos } = props;
    const router = useRouter();
  
    useEffect(() => {
