@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { Tabs } from 'antd';
 
 import Onnanocos from '@components/onnanocos';
+import Add from '@components/add';
 
 import { Space } from 'antd';
 import { TeamOutlined, PlusOutlined, SmileOutlined, CommentOutlined } from '@ant-design/icons';
@@ -51,7 +52,7 @@ function IndexPage() {
                     }
                     key="add"
                 >
-
+                    <Add />
                 </TabPane>
 
                 <TabPane
