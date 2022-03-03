@@ -1,0 +1,20 @@
+.qna-list {
+  margin-top: 20px;
+  padding: 20px 20px 68px;
+  li {
+    margin-bottom: 15px;
+  }
+  svg {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  .question {
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .answer {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}
